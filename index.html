@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="scss/media.sass">
+
+	<title>MSocial</title>
+
+</head>
+
+<body>
+
+<!-- ==================================nav=========================================== -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+ 		<a href="#" class="navbar-brand">
+ 			<img src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" width="30" height="30" alt="logo">
+ 		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">    		
+			<span class="navbar-toggler-icon"></span>
+ 		</button>
+
+    	<div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+
+    		<ul class="navbar-nav mr-auto">
+
+    			<li class="nav-item">
+    				<a href="#" class="nav-link">Home</a>
+    			</li>	
+
+    			<li class="nav-item">
+    				<a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal">Invite</a>
+    			</li>	
+
+    			<li class="nav-item">
+    				<a href="#" class="nav-link">Contacts</a>
+    			</li>	
+
+    		</ul>
+
+    	</div> <!-- /collapse navbar-collapse -->
+
+ 	</nav> <!-- /nav -->
+
+<!-- ====================================modal========================================== -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelleddy="exampleModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content container-lg">
+      
+                <div class="modal-header">
+                    <h5 class="modal-title" id="#exampleModalLable">Invite people to project</h5>
+
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+               </div> 
+
+               <div class="modal-body">
+
+                       <form>
+
+                           <div class="row form-top">
+                              <input class="col-lg-9 col-sm-12 form-top-control " type="email" name="exampleInputEmail" aria-describdby="emailHelp" placeholder="        Name or email">
+                              
+										<img class="form-loupe" src="img/loupe.PNG" alt="">
+										<button class=" btn form-top-control-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Can edit</button>
+                          		<button class="col-lg-3 col-sm-12 btn btn-dark"> Invite 1 person </button>
+
+                           </div> <!-- /top -->
+						
+                           <div class="form-bottom">
+
+                           	<div class="row form-bottom-profile">
+											<div class="col-lg-1 col-sm-12 form-bottom-profile-avatar">
+												<img src="http://dummyimage.com/1920x1080/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" width="30" height="30" alt="logo">
+											</div>
+											<div class="col-lg-4 col-sm-12 form-bottom-profile-info">
+												<p>Name Name</p>
+												<p>Email@mail.com</p>
+											</div>
+											<div class="col-lg-6 col-sm-12 form-bottom-profile-status">
+												<p class="">Spent 3h 34min</p>
+												<button type="button" class="btn form-bottom-profile-btn">Transfer ownership</button>
+											</div>
+										</div> <!-- /profile -->
+
+										<div class="row form-bottom-profile">
+											<div class="col-lg-1 col-sm-12 form-bottom-profile-avatar">
+												<img src="http://dummyimage.com/1000x1000/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" width="30" height="30" alt="logo">
+											</div>
+											<div class="col-lg-4 col-sm-12 form-bottom-profile-info">
+												<p>Name Name</p>
+												<p>Email@mail.com</p>
+											</div>
+											<div class="col-lg-6 col-sm-12 form-bottom-profile-status">
+												<p class="">Spent 3h 34min</p>
+												<button type="button" class="btn form-bottom-profile-btn">Transfer</button>
+											</div>
+										</div> <!-- /profile -->
+
+										<div class="row form-bottom-profile">
+											<div class="col-lg-1 col-sm-121 form-bottom-profile-avatar">
+												<img src="http://dummyimage.com/500x300/4d494d/686a82.gif&text=placeholder+image" alt="placeholder+image" width="30" height="30" alt="logo">
+											</div>
+											<div class="col-lg-4 col-sm-12 form-bottom-profile-info">
+												<p>Name Name</p>
+												<p>Email@mail.com</p>
+											</div>
+											<div class="col-lg-6 col-sm-12 form-bottom-profile-status">
+												<p class=""></p>
+												<button type="button" class="btn form-bottom-profile-btn">Lorem</button>
+											</div>
+										</div> <!-- /profile -->
+
+									</div> <!-- /bottom -->
+
+                       </form>
+       			
+               </div> <!-- /modal-body -->
+
+				<div class="modal-footer">
+					<div class="col-lg-6 col-sm-12">
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
+
+					<div class="col-lg-6 col-sm-12 modal-footer-btns">
+							<button class="btn btn-light dropdown-toggle modal-footer-btns-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Can edit</button>
+            			<button class="btn btn-dark modal-footer-btns-copy" >Copy link</button>
+					</div>
+					
+            </div> <!-- /footer -->
+	             
+
+            </div>
+
+        </div>
+    </div>
+
+<!-- ===================================scripts============================================ -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

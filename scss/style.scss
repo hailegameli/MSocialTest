@@ -1,0 +1,305 @@
+$white: #fff;
+$dark: #333;
+$gray: #cacaca;
+
+p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid
+{
+    margin: 0;
+    padding: 0;
+}
+
+// ==========================modal==========================
+
+.modal-content
+{
+    width: 800px;
+    margin: 100px 0  0 -140px;
+}
+
+.modal-header
+{
+    padding: 40px 50px;
+
+    color: $white;
+    background: $dark;
+
+    h5
+    {
+        margin-left: 15px;
+    }
+}
+
+.close
+{
+    color: $white;
+}
+
+.modal-body
+{
+    padding: 0 80px;
+}
+
+.form // форма
+{
+    
+    &-top //шапка формы
+    { 
+        padding: 60px 0 40px 0;
+
+        &-control
+        {
+        		margin-right: 4px;
+            padding: 12px;
+
+            &-btn
+            {
+                position: absolute;
+
+                margin: 10px 0  0 390px;
+                padding: 4px 15px;
+
+                border-left: solid 1px;
+                border-left-color: $gray;
+                border-radius: 0;
+            }
+        }
+    }
+
+    &-bottom //основная часть формы
+    {
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        width: 670px;
+        height: 200px;
+        margin: 0 0 20px -15px;
+
+        img
+        {
+            width: 50px;
+            height: 50px;
+            padding: 0;
+
+            border-radius: 5px;
+        }
+
+        &-profile
+        {
+            padding-bottom: 20px;
+
+            &-info
+            {
+                padding-left: 25px;
+            }
+
+            &-status
+            {
+                display: flex;
+
+                margin-left: 20px;
+
+                justify-content: flex-end;
+                p
+                {
+                    margin-top: 14px;
+
+                    opacity: .5;
+                }
+            }
+
+            &-btn
+            {
+                margin-left: 6px;
+
+                border: solid 1px;
+                border-color: $gray;
+            }
+        }
+    }
+}
+
+.btn-dark
+{
+    margin-right: -4px;
+}
+
+.form-loupe
+{
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+    margin: 15px 0  0 2px;
+}
+
+.modal-footer //футер модалки
+{
+    margin: 0;
+    padding: 40px 0;
+
+    background: $gray;
+    p
+    {
+        margin-left: 55px;
+    }
+    &-btns
+    {
+        display: flex;
+        &-drop
+        {
+            margin-left: 45px;
+            padding: 12px 15px;
+        }
+        &-copy
+        {
+            margin-left: 6px;
+            padding: 12px 50px;
+        }
+    }
+}
+
+// ========================scroll============================
+
+::-webkit-scrollbar
+{
+    width: 8px;
+
+    background-color: $gray;
+}
+
+::-webkit-scrollbar-thumb
+{
+    width: 8px;
+
+    background-color: $dark;
+}
+
+// ============================adaptiv=======================
+
+@media screen and (max-width: 768px)
+{
+   .modal-content
+{
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+.modal-body
+{
+    padding: 0;
+    padding-left: 10px;
+}
+.btn-dark
+{
+    padding: 12px 0;
+}
+.form // форма
+{
+    &-top //шапка формы
+    {
+        padding: 20px 50px;
+        &-control
+        {
+            margin-bottom: 10px;
+        }
+    }
+    &-bottom //основная часть формы
+    {
+        width: 100%;
+        height: 400px;
+
+        text-align: center;
+
+        img
+        {
+            width: 200px;
+            height: 200px;
+
+            border-radius: 5px;
+        }
+
+        &-profile
+        {
+            margin-left: 2px;
+
+            &-info
+            {
+                margin: 10px 0;
+                padding: 0;
+
+                text-align: center;
+            }
+
+            &-status
+            {
+                display: block;
+
+                margin: 0;
+
+                text-align: center;
+                p
+                {
+                    margin: 0;
+                }
+            }
+
+            &-btn
+            {
+                margin: 10px 0;
+            }
+        }
+    }
+}
+.btn-dark
+{
+    margin-left: -3px;
+}
+
+.form-loupe
+{
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+    margin: 15px 0  0 2px;
+}
+
+.modal-footer //футер модалки
+{
+    display: block;
+
+    margin: 0;
+    padding: 40px 0;
+
+    p
+    {
+        margin: 0;
+        margin-bottom: 10px;
+
+        text-align: center;
+    }
+    &-btns
+    {
+        display: flex;
+
+        justify-content: center;
+        &-drop
+        {
+            margin: 0;
+            padding: 12px 15px;
+        }
+        &-copy
+        {
+            margin-left: 6px;
+            padding: 12px 50px;
+        }
+    }
+}
+
+}
